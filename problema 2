@@ -1,0 +1,15 @@
+cliente = str(input("deme su nombre: "))
+compra =int(input("deme eel valor de su compra: "))
+
+if compra <80:
+    print("no tiene descuento")
+elif 80 <= compra <150:
+    descuento = 0.1
+elif 150<=compra <=300:
+    descuento = 0.15
+elif 300 < compra <500:
+    descuento = 0.2
+
+#aprender a usar los mayor y menor que
+precio_final= compra - (compra * descuento)
+print(f"señor {cliente} valor sin descuento {compra} pero con descuento {precio_final}")
